@@ -18,14 +18,11 @@
             align-items: center;
         }
 
-        @media (min-width: 1000px) {
-            .container {
-                flex-direction: row;
-            }
-        }
-
         .rectangle {
-            height: 11em;
+
+            height: auto;
+            width: 75vw;
+
             background-color: #272F51;
             border-radius: 15px;
             display: flex;
@@ -35,9 +32,10 @@
         }
 
         .circle {
-            max-height: 400px;
-            width: 20em;
-            height: 20em;
+            max-height: none;
+            width: 70vw;
+            height: 70vw;
+
             background-color: #54E7BC;
             border-radius: 50%;
             display: flex;
@@ -50,6 +48,23 @@
             margin: 2rem;
             font-size: 5em;
             font-family: verdana;
+        }
+
+        /* @media (min-width: 1000px) { */
+        @media screen and (orientation:landscape) {
+            .container {
+                flex-direction: row;
+            }
+
+            .rectangle {
+                height: 25vh;
+                width: auto;
+            }
+
+            .circle {
+                width: 30vh;
+                height: 30vh;
+            }
         }
     </style>
 </head>
